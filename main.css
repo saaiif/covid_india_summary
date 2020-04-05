@@ -13,7 +13,8 @@
 }
 
 body {
-  background-color: var(--clr-blue);
+  background: -webkit-gradient(linear, left bottom, left top, from(#f1f2b5), to(#135058));
+  background: linear-gradient(to top, #f1f2b5, #135058);
   font-family: 'Montserrat';
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,6 +63,10 @@ label span {
   font-size: 22px;
 }
 
+label p {
+  margin-top: 7px;
+}
+
 header {
   border-bottom: 1px solid #f0f0f0;
   background-color: #f7f7f7;
@@ -84,8 +89,20 @@ header div {
   max-width: 100%;
 }
 
+.globallyContainer {
+  background-color: #164866;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+  margin: 20px 0 20px 0;
+}
+
 @media screen and (max-width: 450px) {
   .container {
+    width: 350px;
+  }
+  .globallyContainer {
     width: 350px;
   }
   label .date {
@@ -102,6 +119,9 @@ header div {
 
 @media screen and (max-width: 380px) {
   .container {
+    width: 310px;
+  }
+  .globallyContainer {
     width: 310px;
   }
   label .date {

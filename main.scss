@@ -14,7 +14,8 @@
 }
 
 body {
-	background-color: var(--clr-blue);
+	// background-color: var(--clr-blue);
+	background: linear-gradient(to top, #f1f2b5, #135058);
 	font-family: 'Montserrat';
 	display: flex;
 	align-items: center;
@@ -52,6 +53,10 @@ label {
 		color: var(--clr-dark);
 		font-size: 22px;
 	}
+
+	& p {
+		margin-top: 7px;
+	}
 }
 
 header {
@@ -75,9 +80,20 @@ header {
 	width: 400px;
 	max-width: 100%;
 }
+.globallyContainer {
+	background-color: rgb(22, 72, 102);
+	border-radius: 5px;
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+	margin: 20px 0 20px 0;
+}
 
 @media screen and (max-width: 450px) {
 	.container {
+		width: 350px;
+	}
+	.globallyContainer {
 		width: 350px;
 	}
 	label .date {
@@ -93,6 +109,9 @@ header {
 }
 @media screen and (max-width: 380px) {
 	.container {
+		width: 310px;
+	}
+	.globallyContainer {
 		width: 310px;
 	}
 	label .date {

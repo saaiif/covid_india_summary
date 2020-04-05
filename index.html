@@ -11,8 +11,6 @@
 <body>
 
     <main>
-
-
         <div class="container">
             <header>
                 <div>Covid Cases country Wise</div>
@@ -26,7 +24,10 @@
                     <select style="font-size: 16px;">
                         <option value="Hi" data-country-name></option>
                     </select><br />
-
+                    <label for="newCase">
+                        <p>Country Code</p>
+                        <div class="sameField"><span data-countrycode-info></span></div>
+                    </label>
                     <label for="newCase">
                         <p>Slug</p>
                         <div class="sameField"><span data-slug-info></span></div>
@@ -62,6 +63,49 @@
 
                 </div>
             </div>
+            </div>
+
+            <div class="globallyContainer">
+                <header>
+                    <div>Covid Cases Globally</div>
+                    <label for="newCase">
+                        <p style="text-align: center; color: #000; margin-top: 10px;">As on</p>
+                        <div class="sameField date"><span class="date" data-dateGlobally></span></div>
+                    </label>
+                </header>
+                <div>
+                    <div class="country_names">
+            
+                        <label for="newCase">
+                            <p>New Confirmed Case</p>
+                            <div class="sameField"><span data-newcase-infoGlobally></span></div>
+                        </label>
+            
+                        <!----->
+                        <label for="newCase">
+                            <p>Total Confirmed Case</p>
+                            <div class="sameField"><span data-totalnewcase-infoGlobally></span></div>
+                        </label>
+                        <label for="newCase">
+                            <p>New Deaths</p>
+                            <div class="sameField" style="background:rgb(252, 230, 230);"><span data-newdeaths-infoGlobally></span>
+                            </div>
+                        </label>
+                        <label for="newCase">
+                            <p>Total Deaths</p>
+                            <div class="sameField"><span data-totaldeaths-infoGlobally></span></div>
+                        </label>
+                        <label for="newCase">
+                            <p>New Recovered</p>
+                            <div class="sameField" style="background:rgb(180, 221, 176);"><span data-newrecovered-infoGlobally></span></div>
+                        </label>
+                        <label for="newCase">
+                            <p>Total Recovered</p>
+                            <div class="sameField"><span data-totalrecovered-infoGlobally></span></div>
+                        </label>
+            
+                    </div>
+                </div>
     </main>
 
     <script src="index.js"></script>
