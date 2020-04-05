@@ -95,7 +95,7 @@ header div {
   overflow: hidden;
   width: 400px;
   max-width: 100%;
-  margin: 20px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 @media screen and (max-width: 450px) {
@@ -106,7 +106,7 @@ header div {
     width: 350px;
   }
   label .date {
-    font-size: 18px;
+    font-size: 17px !important;
   }
   footer {
     display: none;
@@ -117,6 +117,10 @@ header div {
   }
 }
 
+label .date {
+  font-size: 20px;
+}
+
 @media screen and (max-width: 380px) {
   .container {
     width: 310px;
@@ -125,7 +129,7 @@ header div {
     width: 310px;
   }
   label .date {
-    font-size: 14px;
+    font-size: 13px !important;
   }
   footer {
     display: none;
