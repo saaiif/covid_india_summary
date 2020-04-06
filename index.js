@@ -59,16 +59,17 @@ function getInfo() {
 		const { Countries, ...covidData } = data;
 		console.log(data);
 		return Object.entries(covidData).map(() => {
+			india = [ 99 ];
 			return {
-				country: data.Countries[100].Country,
-				countryCode: data.Countries[100].CountryCode,
-				slug: data.Countries[100].Slug,
-				newConfirmedCase: data.Countries[100].NewConfirmed,
-				totalConfirmed: data.Countries[100].TotalConfirmed,
-				newDeaths: data.Countries[100].NewDeaths,
-				totalDeaths: data.Countries[100].TotalDeaths,
-				newRecovered: data.Countries[100].NewRecovered,
-				totalRecovered: data.Countries[100].TotalRecovered,
+				country: data.Countries[india].Country,
+				countryCode: data.Countries[india].CountryCode,
+				slug: data.Countries[india].Slug,
+				newConfirmedCase: data.Countries[india].NewConfirmed,
+				totalConfirmed: data.Countries[india].TotalConfirmed,
+				newDeaths: data.Countries[india].NewDeaths,
+				totalDeaths: data.Countries[india].TotalDeaths,
+				newRecovered: data.Countries[india].NewRecovered,
+				totalRecovered: data.Countries[india].TotalRecovered,
 				date: new Date(data.Date),
 				newConfirmedCaseGlobally: data.Global.NewConfirmed,
 				totalConfirmedGlobally: data.Global.TotalConfirmed,
