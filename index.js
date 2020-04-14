@@ -59,7 +59,7 @@ function getInfo() {
 		const { Countries, ...covidData } = data;
 		console.log(data);
 		return Object.entries(covidData).map(() => {
-			india = [ 100 ];
+			india = [ 101 ];
 			return {
 				country: data.Countries[india].Country,
 				countryCode: data.Countries[india].CountryCode,
