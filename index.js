@@ -24,7 +24,6 @@ let solw;
 getInfo().then((lives) => {
 	solw = lives.length - 1;
 	displayData(lives);
-	console.log(lives);
 });
 
 function displayData(lives) {
@@ -57,10 +56,8 @@ function displayDate(date) {
 function getInfo() {
 	return fetch(API_URL).then((res) => res.json()).then((data) => {
 		const { Countries, ...covidData } = data;
-		console.log(data);
 		return Object.entries(covidData).map((item) => {
 			india = [ 76 ];
-			console.log(india);
 			return {
 				country: data.Countries[india].Country,
 				countryCode: data.Countries[india].CountryCode,
@@ -81,6 +78,5 @@ function getInfo() {
 				dateGlobally: new Date(data.Date)
 			};
 		});
-		// console.log(temp);
 	});
 }
